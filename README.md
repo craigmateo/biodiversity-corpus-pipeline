@@ -10,22 +10,48 @@ GBIF is treated as a sampling and retrieval infrastructure rather than as the co
 
 ## Initial workflow
 
-```text
-GBIF occurrence records
-    â†“
-record selection and clustering
-    â†“
-linguistic-field extraction
-    â†“
-search-anchor generation
-    â†“
-external archive and API retrieval
-    â†“
-automated screening
-    â†“
-manual curation and provenance review
-    â†“
-versioned ecolinguistic corpus
+```mermaid
+flowchart LR
+
+    subgraph Biodiversity Infrastructure
+        A[GBIF Occurrence Records]
+    end
+
+    subgraph Corpus Construction
+        B[Record Selection]
+        C[Linguistic Field Extraction]
+        D[Search Anchor Generation]
+    end
+
+    subgraph External Discovery
+        E[Archives]
+        F[Library Catalogues]
+        G[APIs]
+        H[Historical Literature]
+    end
+
+    subgraph Corpus Development
+        I[Automated Screening]
+        J[Manual Curation]
+        K[Versioned Ecolinguistic Corpus]
+    end
+
+    A --> B
+    B --> C
+    C --> D
+
+    D --> E
+    D --> F
+    D --> G
+    D --> H
+
+    E --> I
+    F --> I
+    G --> I
+    H --> I
+
+    I --> J
+    J --> K
 ```
 
 ## Initial pilot
