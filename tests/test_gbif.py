@@ -1,10 +1,19 @@
 ﻿from biodiversity_corpus.gbif import search_occurrences
 
 
-def test_rejects_invalid_limit() -> None:
+def test_rejects_occurrence_limit_above_300() -> None:
     try:
-        search_occurrences(limit=0)
+        search_occurrences(limit=301)
     except ValueError:
         return
 
-    raise AssertionError("Expected ValueError for limit=0")
+    raise AssertionError("Expected ValueError for limit=301")
+
+
+def test_rejects_negative_offset() -> None:
+    try:
+        search_occurrences(offset=-1)
+    except ValueError:
+        return
+
+    raise AssertionError("Expected ValueError for a negative offset")

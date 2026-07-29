@@ -1,6 +1,9 @@
-﻿country: CA
-scientific_name: Rangifer tarandus
+﻿country: null
+scientific_name: null
+
+dataset_key: d6bfedb3-6ed6-4ce1-b447-04ec9dbf732c
+
+year_from: 1908
+year_to: 1909
+
 limit: 100
-year_from: 1880
-year_to: 1925
-include_media: true
