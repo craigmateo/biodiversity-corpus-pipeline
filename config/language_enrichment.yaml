@@ -1,0 +1,30 @@
+enabled: false
+
+spatial_lookup:
+  require_coordinates: true
+  retain_coordinate_uncertainty: true
+  candidate_limit: 10
+
+temporal_lookup:
+  use_occurrence_year: true
+  allow_undated_sources: true
+  flag_temporal_mismatch: true
+
+identifiers:
+  preferred:
+    - glottocode
+    - iso_639_3
+    - source_local_id
+
+vernacular_names:
+  require_source_attribution: true
+  require_language_attribution: true
+  preserve_original_orthography: true
+  allow_multiple_names_per_species: true
+  manual_validation_required: true
+
+governance:
+  public_sources_only: true
+  record_access_conditions: true
+  record_community_attribution: true
+  do_not_infer_community_knowledge: true
