@@ -16,3 +16,6 @@ outputs/reports/*
 !data/interim/.gitkeep
 !outputs/search_queries/.gitkeep
 !outputs/reports/.gitkeep
+
+# Reproducibly downloaded language reference data
+data/reference/languages/glottolog/*.csv

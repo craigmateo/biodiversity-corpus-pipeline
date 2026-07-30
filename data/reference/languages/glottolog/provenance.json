@@ -1,0 +1,15 @@
+{
+  "source": "Glottolog",
+  "version": "5.3",
+  "dataset": "languages_and_dialects_geo.csv",
+  "source_url": "https://cdstar.eva.mpg.de/bitstreams/EAEA0-608B-9919-A962-0/languages_and_dialects_geo.csv",
+  "retrieved_at": "2026-07-30T21:01:19.551558+00:00",
+  "sha256": "e1b68f09acadda3610ecb6704ffe573fcf5b73411ad1ad1f6396a3ff9754e702",
+  "license": "CC BY 4.0",
+  "purpose": "Candidate language-location discovery",
+  "limitations": [
+    "Locations are representative points, not territorial polygons.",
+    "The dataset is not inherently historical.",
+    "Geographic proximity does not establish community association."
+  ]
+}
